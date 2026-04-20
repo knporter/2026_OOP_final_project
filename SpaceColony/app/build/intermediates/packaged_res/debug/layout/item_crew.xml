@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    app:cardBackgroundColor="#1A2744"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <!-- Color bar on left -->
+        <View
+            android:id="@+id/colorBar"
+            android:layout_width="6dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="12dp"
+            android:minHeight="60dp" />
+
+        <!-- Info -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvSpec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#90CAF9"
+                android:textSize="12sp"
+                android:layout_marginTop="2dp" />
+
+            <TextView
+                android:id="@+id/tvStats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#78909C"
+                android:textSize="11sp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="monospace" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:buttonTint="#64B5F6" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ic_launcher_background">#FFFFFF</color>
+    <string name="app_name">Space Colony</string>
+    <style name="Theme.SpaceColony" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#1565C0</item>
+        <item name="colorPrimaryVariant">#0D47A1</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">#64B5F6</item>
+        <item name="android:windowBackground">#FFFFFF</item>
+        <item name="android:statusBarColor">#FFFFFF</item>
+        <item name="android:navigationBarColor">#FFFFFF</item>
+    </style>
+</resources>

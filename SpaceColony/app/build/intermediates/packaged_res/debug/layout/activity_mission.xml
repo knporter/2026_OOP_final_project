@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mission Control"
+        android:textColor="#64B5F6"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:padding="20dp"
+        android:background="#FFFFFF" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select exactly 2 crew members for the mission"
+        android:textColor="#78909C"
+        android:textSize="13sp"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:padding="4dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:padding="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/ivThreatPreview"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginBottom="8dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:contentDescription="Threat preview"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvMissionLog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select 2 crew and launch a mission."
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:fontFamily="monospace"
+                android:padding="12dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:background="#FFFFFF">
+
+        <Button
+            android:id="@+id/btnLaunch"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="6dp"
+            android:text="Launch"
+            android:backgroundTint="#B71C1C"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnNextRound"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="6dp"
+            android:text="Next Round"
+            android:backgroundTint="#1565C0"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnReturnCrew"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Return Home"
+            android:backgroundTint="#2E7D32"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
